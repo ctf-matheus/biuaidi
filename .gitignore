@@ -1,0 +1,23 @@
+# Environment files — NEVER expose API keys
+.env
+.env.local
+.env.*.local
+dashboard/.env
+dashboard/.env.local
+
+# Dependencies
+node_modules/
+dashboard/node_modules/
+
+# Build output
+dashboard/dist/
+dashboard/dist-ssr/
+dashboard/.vite/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/

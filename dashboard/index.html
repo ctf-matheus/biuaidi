@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BiUaiDi — Red Team Orchestrator</title>
+    <meta name="description" content="BiUaiDi — Red Team Pentest Pipeline Orchestrator powered by Claude AI" />
+    <!-- SEC-08: Content Security Policy -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self'; connect-src https://api.anthropic.com; font-src https://fonts.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'self' 'unsafe-inline';" />
+    <!-- Anti-FOUC: apply stored theme before React mounts -->
+    <script>
+      (function () {
+        var stored = localStorage.getItem("biuaidi-theme");
+        var theme = stored || (window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");
+        document.documentElement.dataset.theme = theme;
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

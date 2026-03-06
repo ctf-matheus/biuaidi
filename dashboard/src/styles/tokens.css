@@ -1,0 +1,136 @@
+/* ─────────────────────────────────────────────────────────────────────────
+   BiUaiDi — Design tokens
+   Anthropic-inspired palette · dark (default) + light themes
+   ───────────────────────────────────────────────────────────────────────── */
+
+:root {
+  color-scheme: dark;
+
+  /* Surfaces */
+  --bg:              #0D0C0F;
+  --surface:         #131218;
+  --surface-raised:  #1A1920;
+  --surface-hover:   #212030;
+  --surface-overlay: rgba(0, 0, 0, 0.72);
+
+  /* Borders */
+  --border:          #252430;
+  --border-strong:   #363548;
+
+  /* Text */
+  --text-primary:    #EDE8E3;
+  --text-secondary:  #79746F;
+  --text-muted:      #3D3A38;
+
+  /* Accent — Anthropic coral */
+  --accent:          #D97757;
+  --accent-hover:    #E88C6E;
+  --accent-dim:      #7A3E22;
+  --accent-subtle:   rgba(217, 119, 87, 0.12);
+  --accent-pulse-a:  rgba(217, 119, 87, 0.45);
+  --accent-pulse-b:  rgba(217, 119, 87, 0);
+
+  /* Semantic */
+  --green:           #5B9E72;
+  --green-subtle:    rgba(91, 158, 114, 0.12);
+  --yellow:          #B5913A;
+  --red:             #9E5050;
+  --blue:            #5A7BAE;
+  --blue-subtle:     rgba(90, 123, 174, 0.15);
+  --purple:          #8B6BBF;
+
+  /* Severity */
+  --sev-critical:    #C04040;
+  --sev-high:        #C07040;
+  --sev-medium:      #B09040;
+  --sev-low:         #5A7BAE;
+  --sev-info:        #5B8070;
+
+  /* Stage card tints */
+  --card-running:    rgba(217, 119, 87, 0.07);
+  --card-done:       rgba(91, 158, 114, 0.07);
+  --card-error:      rgba(158, 80, 80, 0.07);
+
+  /* Status badge backgrounds */
+  --badge-processing-bg:  rgba(217, 119, 87, 0.15);
+  --badge-idle-bg:        rgba(91, 158, 114, 0.13);
+
+  /* Code output */
+  --code-bg:         #09090F;
+  --code-text:       #A8D8B0;
+
+  /* Elevation shadows (flat in dark mode) */
+  --shadow-xs:  none;
+  --shadow-sm:  none;
+  --shadow-md:  none;
+  --shadow-lg:  none;
+
+  /* Border radius scale */
+  --radius-sm:   4px;
+  --radius-md:   6px;
+  --radius-lg:   8px;
+  --radius-xl:  12px;
+}
+
+[data-theme="light"] {
+  color-scheme: light;
+
+  /* Surfaces */
+  --bg:              #F7F5F2;
+  --surface:         #FFFFFF;
+  --surface-raised:  #F2F0EC;
+  --surface-hover:   #EAE8E3;
+  --surface-overlay: rgba(0, 0, 0, 0.40);
+
+  /* Borders */
+  --border:          #E4E0D8;
+  --border-strong:   #C8C2B8;
+
+  /* Text */
+  --text-primary:    #1C1814;
+  --text-secondary:  #6B6460;
+  --text-muted:      #ABA49A;
+
+  /* Accent */
+  --accent:          #C96441;
+  --accent-hover:    #D97757;
+  --accent-dim:      #F0D5C5;
+  --accent-subtle:   rgba(201, 100, 65, 0.09);
+  --accent-pulse-a:  rgba(201, 100, 65, 0.40);
+  --accent-pulse-b:  rgba(201, 100, 65, 0);
+
+  /* Semantic */
+  --green:           #27784A;
+  --green-subtle:    rgba(39, 120, 74, 0.10);
+  --yellow:          #8A6B1A;
+  --red:             #8A2E2E;
+  --blue:            #2D5A8E;
+  --blue-subtle:     rgba(45, 90, 142, 0.12);
+  --purple:          #6B4A9E;
+
+  /* Severity */
+  --sev-critical:    #B02020;
+  --sev-high:        #A04818;
+  --sev-medium:      #8A6808;
+  --sev-low:         #2D5A8E;
+  --sev-info:        #1E6050;
+
+  /* Stage card tints */
+  --card-running:    rgba(201, 100, 65, 0.07);
+  --card-done:       rgba(39, 120, 74, 0.07);
+  --card-error:      rgba(138, 46, 46, 0.07);
+
+  /* Status badge backgrounds */
+  --badge-processing-bg:  rgba(201, 100, 65, 0.12);
+  --badge-idle-bg:        rgba(39, 120, 74, 0.10);
+
+  /* Code output */
+  --code-bg:         #F0EDE8;
+  --code-text:       #1E5C38;
+
+  /* Elevation shadows */
+  --shadow-xs:  0 1px 2px rgba(0,0,0,0.05);
+  --shadow-sm:  0 1px 4px rgba(0,0,0,0.07), 0 1px 2px rgba(0,0,0,0.04);
+  --shadow-md:  0 4px 8px rgba(0,0,0,0.07), 0 2px 4px rgba(0,0,0,0.04);
+  --shadow-lg:  0 8px 24px rgba(0,0,0,0.09), 0 4px 8px rgba(0,0,0,0.05);
+}
